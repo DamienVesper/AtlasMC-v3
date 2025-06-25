@@ -3071,22 +3071,22 @@ inquisitive:
   levels:
     '1':
       chance: 30
-      cooldown: 4
+      # cooldown: 4
       effects:
         - EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> @Victim
     '2':
       chance: 35
-      cooldown: 4
+      # cooldown: 4
       effects:
         - EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> @Victim
     '3':
       chance: 40
-      cooldown: 4
+      # cooldown: 4
       effects:
         - EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> @Victim
     '4':
       chance: 50
-      cooldown: 4
+      # cooldown: 4
       effects:
         - EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> @Victim
 lifesteal:
