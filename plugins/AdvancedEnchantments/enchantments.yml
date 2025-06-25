@@ -614,35 +614,35 @@ experience:
   levels:
     '1':
       chance: 15
-      cooldown: 1
+      # cooldown: 1
       conditions:
         - '%block type% contains ORE : %allow%'
       effects:
         - EXP:<random number>2-5</random number> @Block
     '2':
       chance: 30
-      cooldown: 2
+      # cooldown: 2
       conditions:
         - '%block type% contains ORE : %allow%'
       effects:
         - EXP:<random number>2-5</random number>
     '3':
       chance: 45
-      cooldown: 3
+      # cooldown: 3
       conditions:
         - '%block type% contains ORE : %allow%'
       effects:
         - EXP:<random number>2-5</random number> @Block
     '4':
       chance: 60
-      cooldown: 4
+      # cooldown: 4
       conditions:
         - '%block type% contains ORE : %allow%'
       effects:
         - EXP:<random number>2-5</random number> @Block
     '5':
       chance: 75
-      cooldown: 5
+      # cooldown: 5
       conditions:
         - '%block type% contains ORE : %allow%'
       effects:
@@ -3073,22 +3073,22 @@ inquisitive:
       chance: 30
       # cooldown: 4
       effects:
-        - EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> @Victim
+        - EXP:<math>%exp% * (1.0 + 0.25 * 1)</math> @Victim
     '2':
       chance: 35
       # cooldown: 4
       effects:
-        - EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> @Victim
+        - EXP:<math>%exp% * (1.0 + 0.25 * 2)</math> @Victim
     '3':
       chance: 40
       # cooldown: 4
       effects:
-        - EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> @Victim
+        - EXP:<math>%exp% * (1.0 + 0.25 * 3)</math> @Victim
     '4':
       chance: 50
       # cooldown: 4
       effects:
-        - EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> @Victim
+        - EXP:<math>%exp% * (1.0 + 0.25 * 4)</math> @Victim
 lifesteal:
   display: '%group-color%Lifesteal'
   description: |-
