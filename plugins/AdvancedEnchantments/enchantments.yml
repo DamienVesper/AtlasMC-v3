@@ -579,8 +579,8 @@ aquatic:
     '1':
       effects:
         - POTION:WATER_BREATHING:0
-smelting:
-  display: '%group-color%Smelting'
+autosmelt:
+  display: '%group-color%Auto Smelt'
   description: Chance to smelt mined blocks.
   applies-to: Pickaxes
   type: MINING
@@ -2127,8 +2127,8 @@ ragdoll:
       cooldown: 4
       effects:
         - PULL_AWAY:0.3 @Victim
-trench:
-  display: '%group-color%Trench'
+detonate:
+  display: '%group-color%Detonate'
   description: Chance to break in 3x3 area.
   applies-to: Pickaxes, Shovels
   type: MINING
