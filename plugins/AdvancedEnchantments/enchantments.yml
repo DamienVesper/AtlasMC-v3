@@ -302,7 +302,8 @@ gemify:
   description: Chance for an ore block to turn into it's block
   applies-to: Pickaxe
   type: MINING
-  group: FABLED
+  group: LEGENDARY
+ 
   settings:
     showActionBar: true
   applies:
@@ -654,7 +655,7 @@ haste:
   description: Allows you to swing your tools faster.
   applies-to: Tools
   type: HELD
-  group: FABLED
+  group: UlTIMATE
   applies:
     - ALL_PICKAXE
     - ALL_SPADE
@@ -1355,35 +1356,35 @@ netherslayer:
     - ALL_AXE
   levels:
     '1':
-      chance: 16
+      chance: 20
       cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
       effects:
         - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
     '2':
-      chance: 21
+      chance: 25
       cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIEor %mob type% = GHAST : %allow%'
       effects:
         - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
     '3':
-      chance: 29
+      chance: 30
       cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
       effects:
         - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
     '4':
-      chance: 34
+      chance: 35
       cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
       effects:
         - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
     '5':
-      chance: 41
+      chance: 40
       cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
@@ -3073,22 +3074,22 @@ inquisitive:
       chance: 30
       # cooldown: 4
       effects:
-        - EXP:<math>%exp% * (1.0 + 0.25 * 1)</math> @Victim
+        - EXP:<math>%exp% * (1.0 + 1 * 1)</math> @Victim
     '2':
       chance: 35
       # cooldown: 4
       effects:
-        - EXP:<math>%exp% * (1.0 + 0.25 * 2)</math> @Victim
+        - EXP:<math>%exp% * (1.0 + 1 * 2)</math> @Victim
     '3':
       chance: 40
       # cooldown: 4
       effects:
-        - EXP:<math>%exp% * (1.0 + 0.25 * 3)</math> @Victim
+        - EXP:<math>%exp% * (1.0 + 1 * 3)</math> @Victim
     '4':
       chance: 50
       # cooldown: 4
       effects:
-        - EXP:<math>%exp% * (1.0 + 0.25 * 4)</math> @Victim
+        - EXP:<math>%exp% * (1.0 + 1 * 4)</math> @Victim
 lifesteal:
   display: '%group-color%Lifesteal'
   description: |-
@@ -3130,7 +3131,7 @@ overload:
   description: Unlocks additional hearts.
   applies-to: Armor
   type: EFFECT_STATIC
-  group: HEROIC
+  group: FABLED
   applies:
     - ALL_ARMOR
   levels:
