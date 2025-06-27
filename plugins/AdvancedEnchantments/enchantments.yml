@@ -659,7 +659,7 @@ haste:
   applies:
     - ALL_PICKAXE
     - ALL_SPADE
-    - ALL_AXE
+    # - ALL_AXE
   levels:
     '1':
       effects:
