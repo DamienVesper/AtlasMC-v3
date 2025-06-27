@@ -1356,35 +1356,35 @@ netherslayer:
     - ALL_AXE
   levels:
     '1':
-      chance: 20
+      chance: 40
       cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
       effects:
         - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
     '2':
-      chance: 25
+      chance: 45
       cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIEor %mob type% = GHAST : %allow%'
       effects:
         - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
     '3':
-      chance: 30
+      chance: 50
       cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
       effects:
         - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
     '4':
-      chance: 35
+      chance: 60
       cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
       effects:
         - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
     '5':
-      chance: 40
+      chance: 70
       cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
