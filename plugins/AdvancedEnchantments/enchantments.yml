@@ -655,7 +655,7 @@ haste:
   description: Allows you to swing your tools faster.
   applies-to: Tools
   type: HELD
-  group: UlTIMATE
+  group: LEGENDARY
   applies:
     - ALL_PICKAXE
     - ALL_SPADE
