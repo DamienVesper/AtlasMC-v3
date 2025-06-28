@@ -1356,40 +1356,40 @@ netherslayer:
     - ALL_AXE
   levels:
     '1':
-      chance: 40
-      cooldown: 2
+      # chance: 40
+      # cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
       effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
+        - INCREASE_DAMAGE:20 @Attacker
     '2':
-      chance: 45
-      cooldown: 2
+      # chance: 45
+      # cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIEor %mob type% = GHAST : %allow%'
       effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
+        - INCREASE_DAMAGE:40 @Attacker
     '3':
-      chance: 50
-      cooldown: 2
+      # chance: 50
+      # cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
       effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
+        - INCREASE_DAMAGE:60 @Attacker
     '4':
-      chance: 60
-      cooldown: 2
+      # chance: 60
+      # cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
       effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
+        - INCREASE_DAMAGE:80 @Attacker
     '5':
-      chance: 70
-      cooldown: 2
+      # chance: 70
+      # cooldown: 2
       conditions:
         - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
       effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
+        - INCREASE_DAMAGE:100 @Attacker
         - POTION:BLINDNESS:2:100 @Victim
 allure:
   display: '%group-color%Allure'
@@ -1561,34 +1561,34 @@ smokebomb:
       effects:
         - PARTICLE:CLOUD:200:3 @Victim
         - POTION:BLINDNESS:2:120 @Attacker
-infernal:
-  display: '%group-color%Infernal'
-  description: Explosive fire effect.
-  applies-to: Swords, Axes
-  type: ATTACK;ATTACK_MOB
-  group: ELITE
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-  levels:
-    '1':
-      chance: 15
-      cooldown: 2
-      effects:
-        - PARTICLE:BURN:2:20
-        - BURN:2 @Victim
-    '2':
-      chance: 30
-      cooldown: 2
-      effects:
-        - PARTICLE:BURN:2:40
-        - BURN:4 @Victim
-    '3':
-      chance: 50
-      cooldown: 2
-      effects:
-        - PARTICLE:BURN:3:20
-        - BURN:6 @Victim
+# infernal:
+#   display: '%group-color%Infernal'
+#   description: Explosive fire effect.
+#   applies-to: Swords, Axes
+#   type: ATTACK;ATTACK_MOB
+#   group: ELITE
+#   applies:
+#     - ALL_SWORD
+#     - ALL_AXE
+#   levels:
+#     '1':
+#       chance: 15
+#       cooldown: 2
+#       effects:
+#         - PARTICLE:BURN:2:20
+#         - BURN:2 @Victim
+#     '2':
+#       chance: 30
+#       cooldown: 2
+#       effects:
+#         - PARTICLE:BURN:2:40
+#         - BURN:4 @Victim
+#     '3':
+#       chance: 50
+#       cooldown: 2
+#       effects:
+#         - PARTICLE:BURN:3:20
+#         - BURN:6 @Victim
 extinguish:
   display: '%group-color%Extinguish'
   description: |-
@@ -2262,7 +2262,7 @@ restore:
     half of its durability.
   applies-to: Tools
   type: ITEM_BREAK
-  group: FABLED
+  group: ULTIMATE
   settings:
     showActionBar: true
   applies:
