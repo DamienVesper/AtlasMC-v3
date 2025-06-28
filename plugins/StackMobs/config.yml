@@ -15,7 +15,7 @@
 
 stack:
   # The maximum size that a stack can have.
-  max-size: 100
+  max-size: 50
   # How often entities should be checked for stacking (in ticks. 20 ticks = 1 second) (*)
   interval: 100
   # The area around an entity for which applicable stacks should be found.
@@ -24,7 +24,7 @@ stack:
   # Only begin to stack entities when this amount of entities are nearby.
   threshold:
     enabled: true
-    amount: 4
+    amount: 5
   # Only find matches for this mob if it has moved from the last time nearby mobs were checked. (*)
   # This may have unintended effects, so you should do some testing when modifying this section.
   check-location:
@@ -49,8 +49,8 @@ stack:
 worlds-blacklist: []
 worlds-blacklist-invert: false
 # Types of entity which should not stack (3) (***)
-# We invert this so it is now a whitelist
-types-blacklist: [BLAZE]
+# WE INVERT THIS
+types-blacklist: [BLAZE] # [VILLAGER, WATER, RAIDER]
 types-blacklist-invert: true
 # If the entity's spawn reason is listed below, do not stack. (2)
 reason-blacklist:
@@ -119,7 +119,7 @@ traits:
 # Prevent stacked mobs from targeting players.
 # Similar to no-ai, but allows for movement of entities.
 disable-targeting:
-  enabled: false
+  enabled: true
   # If the entity's type is listed below, do not disable targeting. (3) (***)
   type-blacklist: []
   type-blacklist-invert: false
