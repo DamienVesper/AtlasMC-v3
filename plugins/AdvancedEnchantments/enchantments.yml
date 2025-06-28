@@ -2808,29 +2808,29 @@ aqua:
     - ALL_BOOTS
   levels:
     '1':
-      chance: 8
-      cooldown: 3
+      chance: 1
+      cooldown: 20
       conditions:
         - '%is under water% = TRUE : %allow%'
       effects:
         - DOUBLE_DAMAGE
     '2':
-      chance: 13
-      cooldown: 3
+      chance: 2
+      cooldown: 20
       conditions:
         - '%is under water% = TRUE : %allow%'
       effects:
         - DOUBLE_DAMAGE
     '3':
-      chance: 19
-      cooldown: 5
+      chance: 5
+      cooldown: 20
       conditions:
         - '%is under water% = TRUE : %allow%'
       effects:
         - DOUBLE_DAMAGE
     '4':
-      chance: 23
-      cooldown: 5
+      chance: 10
+      cooldown: 20
       conditions:
         - '%is under water% = TRUE : %allow%'
       effects:
