@@ -3081,12 +3081,12 @@ inquisitive:
       effects:
         - EXP:<math>%exp% * (1.0 + 1 * 2)</math> @Victim
     '3':
-      chance: 40
+      chance: 45
       # cooldown: 4
       effects:
         - EXP:<math>%exp% * (1.0 + 1 * 3)</math> @Victim
     '4':
-      chance: 50
+      chance: 55
       # cooldown: 4
       effects:
         - EXP:<math>%exp% * (1.0 + 1 * 4)</math> @Victim
@@ -3097,7 +3097,7 @@ lifesteal:
     when attacking.
   applies-to: Swords
   type: ATTACK;ATTACK_MOB
-  group: LEGENDARY
+  group: FABLED
   applies:
     - ALL_SWORD
   levels:
