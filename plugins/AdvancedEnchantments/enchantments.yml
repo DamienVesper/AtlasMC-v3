@@ -299,7 +299,7 @@ autoreel:
         - AUTO_REEL
 gemify:
   display: '%group-color%Gemify'
-  description: Chance for an ore block to turn into it's block
+  description: Chance for an ore block to turn into its block
   applies-to: Pickaxe
   type: MINING
   group: LEGENDARY
