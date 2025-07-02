@@ -2186,42 +2186,42 @@ dodge:
     - ALL_ARMOR
   levels:
     '1':
-      chance: 7
+      chance: 2
       cooldown: 8
       conditions:
-        - '%victim is sneaking% = true : %chance%+7'
+        - '%victim is sneaking% = true : %chance%+5'
       effects:
         - CANCEL_EVENT
         - PLAY_SOUND:ENTITY_BAT_TAKEOFF:0.7 @Victim
     '2':
-      chance: 12
+      chance: 4
       cooldown: 8
       conditions:
-        - '%victim is sneaking% = true : %chance%+7'
+        - '%victim is sneaking% = true : %chance%+5'
       effects:
         - CANCEL_EVENT
         - PLAY_SOUND:ENTITY_BAT_TAKEOFF:0.7 @Victim
     '3':
-      chance: 16
+      chance: 6
       cooldown: 8
       conditions:
-        - '%victim is sneaking% = true : %chance%+7'
+        - '%victim is sneaking% = true : %chance%+5'
       effects:
         - CANCEL_EVENT
         - PLAY_SOUND:ENTITY_BAT_TAKEOFF:0.7 @Victim
     '4':
-      chance: 22
+      chance: 8
       cooldown: 8
       conditions:
-        - '%victim is sneaking% = true : %chance%+7'
+        - '%victim is sneaking% = true : %chance%+5'
       effects:
         - CANCEL_EVENT
         - PLAY_SOUND:ENTITY_BAT_TAKEOFF:0.7 @Victim
     '5':
-      chance: 27
+      chance: 10
       cooldown: 8
       conditions:
-        - '%victim is sneaking% = true : %chance%+7'
+        - '%victim is sneaking% = true : %chance%+5'
       effects:
         - CANCEL_EVENT
         - PLAY_SOUND:ENTITY_BAT_TAKEOFF:0.7 @Victim
