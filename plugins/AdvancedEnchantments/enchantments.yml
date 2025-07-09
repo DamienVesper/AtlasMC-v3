@@ -3061,35 +3061,31 @@ aurafarming:
       effects:
         - PARTICLE:SPELL_MOB:5:0 @Aoe{radius=4,target=mobs}
         - KILL:1 @Aoe{radius=4,target=mobs}
-inquisitive:
-  display: '%group-color%Inquisitive'
-  description: Chance to increase EXP drops from mobs.
-  applies-to: Swords
-  type: KILL_MOB
-  group: LEGENDARY
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 35
-      # cooldown: 4
-      effects:
-        - EXP:<math>%exp% * (1.0 + 1 * 1)</math> @Victim
-    '2':
-      chance: 45
-      # cooldown: 4
-      effects:
-        - EXP:<math>%exp% * (1.0 + 1 * 2)</math> @Victim
-    '3':
-      chance: 55
-      # cooldown: 4
-      effects:
-        - EXP:<math>%exp% * (1.0 + 1 * 3)</math> @Victim
-    '4':
-      chance: 65
-      # cooldown: 4
-      effects:
-        - EXP:<math>%exp% * (1.0 + 1 * 4)</math> @Victim
+# inquisitive:
+#   display: '%group-color%Inquisitive'
+#   description: Chance to increase EXP drops from mobs.
+#   applies-to: Swords
+#   type: KILL_MOB
+#   group: LEGENDARY
+#   applies:
+#     - ALL_SWORD
+#   levels:
+#     '1':
+#       chance: 35
+#       effects:
+#         - EXP:<math>%exp% * 2.0</math> @Self
+#     '2':
+#       chance: 45
+#       effects:
+#         - EXP:<math>%exp% * 3.0</math> @Self
+#     '3':
+#       chance: 55
+#       effects:
+#         - EXP:<math>%exp% * 4.0</math> @Self
+#     '4':
+#       chance: 65
+#       effects:
+#         - EXP:<math>%exp% * 5.0</math> @Self
 lifesteal:
   display: '%group-color%Lifesteal'
   description: |-
@@ -3622,17 +3618,17 @@ fuddle:
   levels:
     '1':
       chance: 5
-      cooldown: 15
+      cooldown: 90
       effects:
         - SHUFFLE_HOTBAR @Victim
     '2':
       chance: 10
-      cooldown: 15
+      cooldown: 90
       effects:
         - SHUFFLE_HOTBAR @Victim
     '3':
       chance: 20
-      cooldown: 15
+      cooldown: 90
       effects:
         - SHUFFLE_HOTBAR @Victim
 deranged:
