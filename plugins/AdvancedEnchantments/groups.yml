@@ -31,7 +31,7 @@ groups:
     magic-dust:
       # when right-clicked, it gives magic with success chance
       # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
-      success: 1-15
+      success: 1-5
       # Chance to give Magic dust instead of Mystery dust
       chance: 22
   UNIQUE:
@@ -51,7 +51,7 @@ groups:
     magic-dust:
       # when right-clicked, it gives magic with success chance
       # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
-      success: 1-15
+      success: 1-10
       # Chance to give Magic dust instead of Mystery dust
       chance: 35
   ELITE:
@@ -91,7 +91,7 @@ groups:
     magic-dust:
       # when right-clicked, it gives magic with success chance
       # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
-      success: 10-40
+      success: 1-25
       # Chance to give Magic dust instead of Mystery dust
       chance: 35
   LEGENDARY:
@@ -111,9 +111,9 @@ groups:
     magic-dust:
       # when right-clicked, it gives magic with success chance
       # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
-      success: 1-15
+      success: 5-20
       # Chance to give Magic dust instead of Mystery dust
-      chance: 35
+      chance: 45
   FABLED:
     global-color: "&d"
     group-name: "Fabled"
@@ -131,6 +131,6 @@ groups:
     magic-dust:
       # when right-clicked, it gives magic with success chance
       # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
-      success: 1-15
+      success: 5-20
       # Chance to give Magic dust instead of Mystery dust
-      chance: 35
+      chance: 45
