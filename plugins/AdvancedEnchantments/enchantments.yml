@@ -2891,28 +2891,28 @@ barbarian:
       conditions:
         - '%attacker is holding% contains AXE : %allow%'
       effects:
-        - INCREASE_DAMAGE:<random number>25-50</random number> @Victim
+        - INCREASE_DAMAGE:<random number>12-38</random number> @Victim
     '2':
       chance: 15
       cooldown: 7
       conditions:
         - '%attacker is holding% contains AXE : %allow%'
       effects:
-        - INCREASE_DAMAGE:<random number>25-50</random number> @Victim
+        - INCREASE_DAMAGE:<random number>12-38</random number> @Victim
     '3':
       chance: 19
       cooldown: 7
       conditions:
         - '%attacker is holding% contains AXE : %allow%'
       effects:
-        - INCREASE_DAMAGE:<random number>25-50</random number> @Victim
+        - INCREASE_DAMAGE:<random number>12-38</random number> @Victim
     '4':
       chance: 25
       cooldown: 7
       conditions:
         - '%attacker is holding% contains AXE : %allow%'
       effects:
-        - INCREASE_DAMAGE:<random number>25-50</random number> @Victim
+        - INCREASE_DAMAGE:<random number>12-38</random number> @Victim
 lucid:
   display: '%group-color%Lucid'
   description: |-
