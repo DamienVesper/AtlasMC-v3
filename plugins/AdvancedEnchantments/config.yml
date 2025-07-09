@@ -241,6 +241,8 @@ items:
       word-blacklist:
       - fuck
       - dick
+      - retard
+      - fag
       - bitch
   randomization-scroll:
     type: PAPER
