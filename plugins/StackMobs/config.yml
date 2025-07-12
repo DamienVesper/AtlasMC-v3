@@ -17,7 +17,7 @@ stack:
   # The maximum size that a stack can have.
   max-size: 50
   # How often entities should be checked for stacking (in ticks. 20 ticks = 1 second) (*)
-  interval: 100
+  interval: 20
   # The area around an entity for which applicable stacks should be found.
   # Format: [(x cord),(y cord),(z cord)]
   merge-range: [10,10,10]
@@ -255,7 +255,7 @@ death:
 
 # Multiply entity drops on entity death.
 drops:
-  enabled: true
+  enabled: false
   use-loot-tables: true
   # If each mob should only drop one of the items in the list. (4)
   one-per-stack: []
