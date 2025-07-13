@@ -1665,19 +1665,19 @@ vampire:
       cooldown: 4
       effects:
         - WAIT:40
-        - ADD_HEALTH:<random number>1-6</random number>
+        - ADD_HEALTH:<random number>2-6</random number>
     '2':
       chance: 30
       cooldown: 4
       effects:
         - WAIT:40
-        - ADD_HEALTH:<random number>1-6</random number>
+        - ADD_HEALTH:<random number>2-6</random number>
     '3':
       chance: 40
       cooldown: 4
       effects:
         - WAIT:40
-        - ADD_HEALTH:<random number>1-6</random number>
+        - ADD_HEALTH:<random number>2-6</random number>
 greatsword:
   display: '%group-color%Greatsword'
   description: |-
@@ -2954,26 +2954,26 @@ doublestrike:
     - ALL_SWORD
   levels:
     '1':
-      chance: 8
+      chance: 10
       cooldown: 15
       effects:
         - WAIT:20
         - DO_HARM:%damage% @Victim
-        - BLOOD @Victim
+        # - BLOOD @Victim
     '2':
-      chance: 18
+      chance: 20
       cooldown: 15
       effects:
         - WAIT:20
         - DO_HARM:%damage% @Victim
-        - BLOOD @Victim
+        # - BLOOD @Victim
     '3':
-      chance: 28
+      chance: 30
       cooldown: 15
       effects:
         - WAIT:20
         - DO_HARM:%damage% @Victim
-        - BLOOD @Victim
+        # - BLOOD @Victim
 gears:
   display: '%group-color%Gears'
   description: Added speed when equipped.
@@ -3018,74 +3018,74 @@ inflame:
       effects:
         - PARTICLE:FALLING_LAVA:5:0 @Aoe{radius=6,target=damageable}
         - BURN:60 @Aoe{radius=6,target=damageable}
-aurafarming:
-  display: '%group-color%Aura Farming'
-  description: |-
-    Chance to kill multiple
-    monsters in radius.
-  applies-to: Swords
-  group: LEGENDARY
-  type: ATTACK_MOB
-  settings:
-    showActionBar: true
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 5
-      cooldown: 3
-      effects:
-        - PARTICLE:SPELL_MOB:5:0 @Aoe{radius=2,target=mobs}
-        - KILL:1 @Aoe{radius=2,target=mobs}
-    '2':
-      chance: 15
-      cooldown: 4
-      effects:
-        - PARTICLE:SPELL_MOB:5:0 @Aoe{radius=2,target=mobs}
-        - KILL:1 @Aoe{radius=2,target=mobs}
-    '3':
-      chance: 20
-      cooldown: 5
-      effects:
-        - PARTICLE:SPELL_MOB:5:0 @Aoe{radius=3,target=mobs}
-        - KILL:1 @Aoe{radius=3,target=mobs}
-    '4':
-      chance: 25
-      cooldown: 5
-      effects:
-        - PARTICLE:SPELL_MOB:5:0 @Aoe{radius=3,target=mobs}
-        - KILL:1 @Aoe{radius=3,target=mobs}
-    '5':
-      chance: 30
-      cooldown: 6
-      effects:
-        - PARTICLE:SPELL_MOB:5:0 @Aoe{radius=4,target=mobs}
-        - KILL:1 @Aoe{radius=4,target=mobs}
-# inquisitive:
-#   display: '%group-color%Inquisitive'
-#   description: Chance to increase EXP drops from mobs.
+# aurafarming:
+#   display: '%group-color%Aura Farming'
+#   description: |-
+#     Chance to kill multiple
+#     monsters in radius.
 #   applies-to: Swords
-#   type: KILL_MOB
 #   group: LEGENDARY
+#   type: ATTACK_MOB
+#   settings:
+#     showActionBar: true
 #   applies:
 #     - ALL_SWORD
 #   levels:
 #     '1':
-#       chance: 35
+#       chance: 5
+#       cooldown: 3
 #       effects:
-#         - EXP:<math>%exp% * 2.0</math> @Self
+#         - PARTICLE:SPELL_MOB:5:0 @Aoe{radius=2,target=mobs}
+#         - KILL:1 @Aoe{radius=2,target=mobs}
 #     '2':
-#       chance: 45
+#       chance: 15
+#       cooldown: 4
 #       effects:
-#         - EXP:<math>%exp% * 3.0</math> @Self
+#         - PARTICLE:SPELL_MOB:5:0 @Aoe{radius=2,target=mobs}
+#         - KILL:1 @Aoe{radius=2,target=mobs}
 #     '3':
-#       chance: 55
+#       chance: 20
+#       cooldown: 5
 #       effects:
-#         - EXP:<math>%exp% * 4.0</math> @Self
+#         - PARTICLE:SPELL_MOB:5:0 @Aoe{radius=3,target=mobs}
+#         - KILL:1 @Aoe{radius=3,target=mobs}
 #     '4':
-#       chance: 65
+#       chance: 25
+#       cooldown: 5
 #       effects:
-#         - EXP:<math>%exp% * 5.0</math> @Self
+#         - PARTICLE:SPELL_MOB:5:0 @Aoe{radius=3,target=mobs}
+#         - KILL:1 @Aoe{radius=3,target=mobs}
+#     '5':
+#       chance: 30
+#       cooldown: 6
+#       effects:
+#         - PARTICLE:SPELL_MOB:5:0 @Aoe{radius=4,target=mobs}
+#         - KILL:1 @Aoe{radius=4,target=mobs}
+inquisitive:
+  display: '%group-color%Inquisitive'
+  description: Chance to increase EXP drops from mobs.
+  applies-to: Swords
+  type: KILL_MOB
+  group: LEGENDARY
+  applies:
+    - ALL_SWORD
+  levels:
+    '1':
+      chance: 35
+      effects:
+        - EXP:<math>%exp% * 2.0</math> @Self
+    '2':
+      chance: 45
+      effects:
+        - EXP:<math>%exp% * 3.0</math> @Self
+    '3':
+      chance: 55
+      effects:
+        - EXP:<math>%exp% * 4.0</math> @Self
+    '4':
+      chance: 65
+      effects:
+        - EXP:<math>%exp% * 5.0</math> @Self
 lifesteal:
   display: '%group-color%Lifesteal'
   description: |-
@@ -3111,17 +3111,17 @@ lifesteal:
       chance: 20
       cooldown: 15
       effects:
-        - STEAL_HEALTH:<random number>1-3</random number> @Attacker
+        - STEAL_HEALTH:<random number>2-4</random number> @Attacker
     '4':
       chance: 25
       cooldown: 15
       effects:
-        - STEAL_HEALTH:<random number>1-4</random number> @Attacker
+        - STEAL_HEALTH:<random number>2-5</random number> @Attacker
     '5':
       chance: 30
-      cooldown: 10
+      cooldown: 15
       effects:
-        - STEAL_HEALTH:<random number>1-5</random number> @Attacker
+        - STEAL_HEALTH:<random number>3-5</random number> @Attacker
 overload:
   display: '%group-color%Overload'
   description: Unlocks additional hearts.
