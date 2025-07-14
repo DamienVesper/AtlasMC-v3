@@ -3,3 +3,19 @@
 plugins/AdvancedEnchantments/locale
 plugins/AdvancedEnchantments/armorSets
 plugins/AdvancedEnchantments/customWeapons
+
+# jarfiles
+*.jar
+
+# folders
+world/
+world_nether/
+world_the_end/
+plugins/.paper-remapped/
+config/
+logs/
+plugins/bStats
+
+
+# random stuff
+_shit/
